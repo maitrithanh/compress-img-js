@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compress Image Free - Thanh Tool</title>
+    <link rel="stylesheet" href="/assets/css/global.css">
+    <link rel="shortcut icon" href="./assets/images/MTT.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"></head>
+<body>
+    <div class="logo" style="display: inline-block; width: 100%;">
+        <div class="img-logo" style="display: inline-block;">
+            <img src="./assets/images/MTT.png" alt="logo" height="100px">
+        </div>
+    </div>
+    <div class="container">
+        <div class="input">
+            <div class="button-box">
+                <button class="upload">Upload</button>
+            </div>
+            <ul class="metadata" style="padding: 0; margin: 0;">
+                <li>Name: <span></span></li>
+                <li>Dimension: <span></span></li>
+                <li>Size: <span></span></li>
+            </ul>
+        </div>
+        <div class="output">
+            <div class="button-box">
+                <button class="download">Download</button>
+            </div>
+            <ul class="metadata" style="padding: 0; margin: 0;">
+                <li>Compressed: <span></span></li>
+                <li>Dimension: <span></span></li>
+                <li>Size: <span></span></li>
+            </ul>
+        </div>
+    </div>
+    
+    <div class="container progress-container">
+        <span class="showprogress"></span>
+        <div class="progress">
+            <input type="range" class="input-value" min="10" value="30" max="99" step="any">
+         </div>
+    </div>
+
+    <div class="box-preview">
+        <div class="preview-container">
+            <input type="range" id="slider-input" min="0" max="100" step="any">
+            <div class="compressed">Compressed</div>
+            <div class="original">Original</div>
+            <div class="bottom">
+                <img src="oli-woodman.jpg" alt="">
+            </div>
+            <div class="top">
+                <img src="oli-woodman.jpg" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="language" style="padding: 26px;">
+        <a href="./indexvie.html" style="text-decoration: none; color: #0a68ff; right: 0; position: absolute; padding: 8px 260px;">Tiếng Việt</a>
+    </div>
+    <input type="file" id="hidden-button" style="display: none;" accept="image/*">
+    <script src="./assets/js/compressor.js"></script>
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>
