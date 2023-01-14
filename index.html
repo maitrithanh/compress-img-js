@@ -7,20 +7,31 @@
     <title>Compress Image Free - Thanh Tool</title>
     <link rel="stylesheet" href="./assets/css/styles.css">
     <link rel="shortcut icon" href="./assets/images/MTT.png" type="image/x-icon">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"></head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
 <body>
-    <div class="logo" style="display: inline-block; width: 100%;">
-        <div class="img-logo" style="display: inline-block;">
-            <img src="./assets/images/MTT.png" alt="logo" height="100px">
-        </div>
     </div>
-    <div class="container">
+    <nav class="navbar navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="./assets/images/MTT2.png" width="100" alt="">
+              </a>
+              <div class="my-2">
+                  <div class="language">
+                      <a href="./indexvie.html" style="text-decoration: none; color: #0a68ff; right: 0;">Tiếng Việt</a>
+                  </div>
+              </div>
+        </div>
+      </nav>
+    
+    <div class="container box" style="padding: 10px;">
         <div class="input">
             <div class="button-box">
                 <button class="upload">Upload</button>
             </div>
             <ul class="metadata" style="padding: 0; margin: 0;">
-                <li>Name: <span></span></li>
+                <li>File Name: <span></span></li>
                 <li>Dimension: <span></span></li>
                 <li>Size: <span></span></li>
             </ul>
@@ -37,30 +48,35 @@
         </div>
     </div>
     
-    <div class="container progress-container">
+    <div class="container progress-container box">
         <span class="showprogress"></span>
         <div class="progress">
             <input type="range" class="input-value" min="10" value="30" max="99" step="any">
          </div>
     </div>
-
-    <div class="box-preview">
-        <div class="preview-container">
-            <input type="range" id="slider-input" min="0" max="100" step="any">
-            <div class="compressed">Compressed</div>
-            <div class="original">Original</div>
-            <div class="bottom">
-                <img src="oli-woodman.jpg" alt="">
-            </div>
-            <div class="top">
-                <img src="oli-woodman.jpg" alt="">
-            </div>
+    <div class="preview-container">
+        <input type="range" id="slider-input" min="0" max="100" step="any">
+        <div class="compressed">Compressed</div>
+        <div class="original">Original</div>
+        <div class="bottom">
+            <img src="oli-woodman.jpg" alt="">
+        </div>
+        <div class="top">
+            <img src="oli-woodman.jpg" alt="">
         </div>
     </div>
-    <div class="language" style="padding: 26px;">
-        <a href="./indexvie.html" style="text-decoration: none; color: #0a68ff; right: 0; position: absolute; padding: 8px 260px;">Tiếng Việt</a>
-    </div>
+
+    
     <input type="file" id="hidden-button" style="display: none;" accept="image/*">
+
+    <div class="footer" style="text-align: center; padding: 50px;">
+        <a href="https://github.com/mytrithanh">
+            <p>
+                <i class="fa fa-github"></i>
+                MyTriThanh &copy 2023
+            </p>
+        </a>
+    </div>
     <script src="./assets/js/compressor.js"></script>
     <script src="./assets/js/script.js"></script>
 </body>
